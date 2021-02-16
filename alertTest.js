@@ -1,3 +1,3 @@
-function functionName( s ){
-	alert('Hello, ' + s + '!');
-}
+function Hello() {
+    alert("Hello, World");
+ }

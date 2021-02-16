@@ -356,5 +356,6 @@ function fortune(){
     ]
 
 var randomItem = fortunes[Math.floor(Math.random()*fortunes.length)];
-return randomItem;
+//return randomItem;
+alert(randomItem);
 }

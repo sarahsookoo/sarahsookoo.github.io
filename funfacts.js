@@ -5,5 +5,8 @@ function facts(){
         "5:23 Burgundy was chosen by Sharmin as a theme color"
     ]
     for (i = 0; i < facts.length; i++)
-        document.writeln((i+1) + ": " + array[i]);
+        document.writeln((i+1) + ": " + facts[i]);
+
+        // console.log(`${i + 1}: ${array[i]}`);
+        // console.log(facts[i]);
 }

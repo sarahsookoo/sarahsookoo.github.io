@@ -1,6 +1,6 @@
 function facts(){
     //  var myWindow = window.open("", "_blank");
-    var myWindow = window.open("", "facts", "width=200,height=100");
+    var myWindow = window.open("", "_blank", "fullscreen=yes");
     myWindow.document.write("<p>5:11pm 2/16/2021 Tanmoy and I came up with the idea for this website</p>");
     
     myWindow.document.write("<p>5:22pm 2/16/2021 Fuchsia was chosen by Tanmoy as a theme color</p>");

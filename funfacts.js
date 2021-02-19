@@ -1,5 +1,5 @@
 function facts(){
-    var myWindow = window.open("", "_self");
+    var myWindow = window.open("");
     myWindow.document.write("<p>5:11pm 2/16/2021 Tanmoy and I came up with the idea for this website</p>");
     
     myWindow.document.write("<p>5:22pm 2/16/2021 Fushia was chosen by Tanmoy as a theme color</p>");

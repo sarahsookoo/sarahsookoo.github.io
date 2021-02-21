@@ -4,11 +4,12 @@
 }
 body{
 	background: #eee;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: sans-serif,arial;
 }
  
 .nav{
+    background-color: #262626;
 	width: 1366px;
 	height: 60px;
 	margin: 0 auto;

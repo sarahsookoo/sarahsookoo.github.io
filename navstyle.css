@@ -4,9 +4,9 @@
 	box-sizing: border-box;
 }
 
-.menu-area li a {
+.menu-area li a {   /* things in nav bar */
 	text-decoration: none;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
@@ -24,7 +24,7 @@
 .custom-padding {
 	padding-top: 25px;
 }
-nav {
+nav {   /* nav bar */
 	position: relative;
 	padding: 10px 20px 10px 10px;
 	text-align: right;
@@ -32,6 +32,7 @@ nav {
 	background: #333;
 	margin: 0 auto;
 	width: 100;
+    
 }
 .menu-area li a:hover {
 	background: fuchsia;

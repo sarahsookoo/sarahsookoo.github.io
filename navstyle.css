@@ -31,7 +31,7 @@ nav {   /* nav bar */
 	z-index: 1;
 	background: #333;
 	margin: 0 auto;
-	width: 100;
+	width: calc(100% - 60px);
     
 }
 .menu-area li a:hover {

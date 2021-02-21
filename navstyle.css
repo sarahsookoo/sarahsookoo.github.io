@@ -29,9 +29,9 @@ ul li{
 ul li ul{
 	position: absolute;
 }
-/* .nav > ul > li:nth-of-type(1){
+.nav > ul > li:nth-of-type(1){
 	border-radius: 5px 0px 0px 5px;
-} */
+}
 .nav > ul > li:nth-of-type(5){
 	border-radius: 0px 5px 5px 0px;
 }
@@ -61,7 +61,7 @@ ul li ul{
 	margin: 0 auto;
 	padding:20px 20px;
 }
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
 	header{
 		width: 100%;
 	}
@@ -94,4 +94,4 @@ ul li ul{
 	body{
 		overflow-x:hidden;
 	}
-}
+} */

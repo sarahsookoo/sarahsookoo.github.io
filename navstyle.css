@@ -58,3 +58,64 @@ nav:after {
 	top: 100%;
 	right: 0;
 }
+
+a{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-area{
+    background: #262626;
+}
+
+.nav-area:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.nav-area ul{
+    list-style: none;
+    margin:0;
+}
+
+.nav-area > ul > li{
+    float:left;
+    position: relative;
+}
+
+.nav-area ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav-area ul li:hover a{
+    background: #34495a;
+}
+.nav-area ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+.nav-area ul li:hover > ul{
+    display: block;
+}
+
+.nav-area ul ul li{
+    position: relative;
+}
+
+.nav-area ul ul ul{
+    top: 0;
+    left: 100%;
+}
+
+.nav-area ul ul ul li:hover a{
+    background: #34495a;
+}

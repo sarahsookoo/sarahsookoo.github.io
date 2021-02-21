@@ -35,7 +35,7 @@ nav {   /* nav bar */
     
 }
 .menu-area li a:hover {
-	background: fuchsia;
+	background: #b7d7e8;
 	color: #fff;
 }
 nav:before {

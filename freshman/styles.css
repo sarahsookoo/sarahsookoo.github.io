@@ -44,3 +44,10 @@
            margin-bottom: 1%;
            /* padding-top: 3%; */
     }
+
+    img{
+        position: static;
+        vertical-align: middle;
+        margin-bottom: 1%;
+        margin-left: 5px;
+    }

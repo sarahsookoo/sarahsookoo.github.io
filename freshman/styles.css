@@ -20,6 +20,7 @@
         text-align: center;
         margin-top: 0%;
         margin-bottom: 0%;
+        padding-bottom: 1.5%;
     }
 
 
@@ -64,3 +65,19 @@
         position: static;
         margin-right: 2%;
       }
+
+      table {
+        border: 1px, solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Garamond;
+        border-bottom: 1px solid #ddd;
+      }
+      
+     

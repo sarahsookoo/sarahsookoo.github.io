@@ -1,12 +1,10 @@
 var questions = [" How many soccer players should each team have on the field at the start of each match?",
 "What year was the very first model of the iPhone released?",
-"What does HTTP stand for?"
-]
+"What does HTTP stand for?"]
 
 var answers = ["11", "2007", "HyperText Transfer Protocol"];
 
 var num = Math.floor(Math.random()*questions.length);
-
 
 function facts(){
     var myWindow = window.open("facts.html", "_blank");
@@ -31,8 +29,6 @@ function checkAns(){
     else {
         document.getElementById("ans").innerHTML = "Wrong Answer";
     }
-    //if input == answers[num], congrats
-    
 }
 
 function validateForm() {

@@ -18,13 +18,30 @@
   
 
   <!-- <form name="myForm"  onsubmit="return validateForm()" action="" method="POST"> -->
-    Name: <input type="text" name="firstname">
-    <input type="button"  value="Submit" onclick="return validateForm()">
+    Name: <input type="text" id= "name" name="firstname">
+    <input type="button"  value="Submit" onclick="validateForm(); unHide()">
+    <!-- <input type="button"  value="Submit" onclick="validateForm()"> -->
     
     <p id="demo"></p>
-     
 
-    <!-- <input type="button" class="button" onclick="problems();" value="Start!"> -->
+    <div class = "show" style="visibility: hidden">
+        <p> Press the button to get started!</p>
+        <input type="button" class="button" onclick="problems(); unHide2()" value="Start!"> 
+
+    </div>
+
+    <div class = "show2" style="visibility: hidden;">
+        <p id="question"></p>
+        Answer: <input type="text" id= "answer" name="ans">
+        <input type="button"  value="Submit" onclick="checkAns()">
+        <p id="ans"></p> 
+    </div>
+
+   
+
+    
+
+    
 
     
     

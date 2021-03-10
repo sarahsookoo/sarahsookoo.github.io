@@ -1,0 +1,83 @@
+
+    h1 {
+        color: black;
+        position: static;
+        font-family: Garamond;
+        font-size: 300%;
+        text-align: center;
+        /* background-image: linear-gradient(to bottom right, darkviolet, plum); */
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+
+
+
+    h2 {
+        color: black;
+        position: static;
+        font-family: Garamond;
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-bottom: 1.5%;
+    }
+
+
+
+    h3 {
+        /* color: darkviolet; */
+        position: static;
+        font-family: Garamond;
+        font-size: 270%;
+        text-align: left;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+    }
+
+
+
+    p{
+           font-size: 20px;
+           font-family: Garamond;
+           margin-top: 0%; 
+           margin-bottom: 1%;
+           /* padding-top: 3%; */
+    }
+
+    img{
+        position: static;
+        vertical-align: middle;
+        margin-bottom: 1%;
+        margin-left: 5px;
+    }
+
+    .button {
+        background-color: rgb(0, 0, 107);
+        border-radius: 12px;
+        box-shadow: gray;
+        border: none;
+        color: white;
+        text-align: center;
+        font-family: Garamond;
+        font-size: 30px;
+        position: static;
+        margin-right: 2%;
+      }
+
+      table {
+        border: 1px, solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Garamond;
+        border-bottom: 1px solid #ddd;
+      }
+      
+     

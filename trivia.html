@@ -30,12 +30,21 @@
 
     </div>
 
-    <div class = "show2" style="visibility: hidden;">
-        <p id="question"></p>
+    <div class = "show2" id = "show2" style="visibility: hidden;">
+        <p id="question"></p>  
         Answer: <input type="text" id= "answer" name="ans">
-        <input type="button"  value="Submit" onclick="checkAns()">
+        <input type="button"  value="Submit" onclick="checkAns(); unHide3();">
         <p id="ans"></p> 
     </div>
+
+    <div class = "show3" style="visibility: hidden;">
+      <input type="button" onclick=" replace();" value="Next Question"> 
+      <!-- <p id="ans"></p>  -->
+    </div>
+
+    
+
+    
 
    
 

@@ -95,7 +95,8 @@ function replace(){
     document.getElementById('show2').innerHTML = '';
 
     var newQues = document.createElement('p'); //new question
-    newQues.innerHTML = questions[Math.floor(Math.random()*questions.length)];
+    var ind = Math.floor(Math.random()*questions.length)
+    newQues.innerHTML = questions[ind]; 
     document.getElementById('show2').appendChild(newQues);
 
     var i = document.createElement("input"); //new input box
@@ -106,7 +107,7 @@ function replace(){
     var button = document.createElement("button"); //new button
     button.innerHTML = "Submit";
     button.addEventListener ("click", function(){
-        if (i.value == answers[0]){
+        if (i.value == answers[ind]){
             //document.getElementById('show2').innerHTML= "this is index 0" ;
             var node = document.createElement("ul");
             var textnode = document.createTextNode("Congrats, you're correct!");
@@ -116,7 +117,7 @@ function replace(){
         else{
             //document.getElementById('show2').innerHTML= "this is not index 0" ;
             var node = document.createElement("ul");
-            var textnode = document.createTextNode("Wrong Answer, the correct answer is ");
+            var textnode = document.createTextNode("Wrong Answer, the correct answer is " + answers[ind]);
             node.appendChild(textnode);
             document.getElementById("show2").appendChild(node);
         }

@@ -19,7 +19,7 @@
   <script src="trivia.js" type="text/javascript"> </script>
 
     Name: <input type="text" id= "name" name="firstname">
-    <input type="button" class = "button" value="Submit" onclick="validateForm(); unHide()">
+    <input type="button" class = "button" value="Submit" onclick="validateForm();">
     <!-- <input type="button"  value="Submit" onclick="validateForm()"> -->
     
     <p id="demo"></p>
@@ -33,12 +33,12 @@
     <div class = "show2" id = "show2" style="visibility: hidden;">
         <p id="question"></p>  
         Answer: <input type="text" id= "answer" name="ans">
-        <input type="button" class= "button" value="Submit" onclick="checkAns(); unHide3();">
+        <input type="button" class= "button" value="Submit" onclick="checkAns();">
         <p id="ans"></p> 
     </div>
 
     <div class = "show3" style="visibility: hidden;">
-      <input type="button"class = "button" onclick=" replace();" value="Next Question"> 
+      <input style= "margin-top: 1%" type="button"class = "button" onclick=" replace();" value="Next Question"> 
     </div>
 
     

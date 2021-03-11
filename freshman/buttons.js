@@ -1,5 +1,5 @@
 function freshman1(){
-    var myWindow = window.open("freshman1.html", target="_self");
+    var myWindow = window.open("freshman.html", target="_self");
  }
 
 function winter1(){

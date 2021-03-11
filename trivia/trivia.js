@@ -24,13 +24,17 @@ document.getElementById("question").innerHTML = randomQues;
 
 function checkAns(){ //checks the users answer to the random question
     var input = document.getElementsByName("ans")[0].value;
-    if (input.toLowerCase() == answers[num]){
+    if (input == ""){
+        alert("Answer must be filled out");
+        //return false;
+    }
+    else if (input.toLowerCase() == answers[num]){
         document.getElementById("ans").innerHTML = "Congrats, you're correct";
         unHide3();
     }
     else {
         document.getElementById("ans").innerHTML = "Wrong Answer, the correct answer is " + answers[num];
-        //unHide3();
+        unHide3();
     }
 }
 
@@ -38,11 +42,12 @@ function validateForm() { //checks the name that the user gives
     var x = document.getElementsByName("firstname")[0].value;
     if (x == "") {
       alert("Name must be filled out");
-      return false;
+      //return false;
     }
     else{
         //document.writeln("Hello " + x)
         document.getElementById("demo").innerHTML = "Hello " + x + "!";
+        unHide()
     }
   }
 
@@ -89,7 +94,10 @@ function replace(){
     button.innerHTML = "Submit";
     button.className = "button"; 
     button.addEventListener ("click", function(){
-        if (i.value.toLowerCase() == answers[ind]){
+        if (i.value == ""){
+            alert("Answer must be filled out");
+        }
+        else if (i.value.toLowerCase() == answers[ind]){
             //document.getElementById('show2').innerHTML= "this is index 0" ;
             var node = document.createElement("ul");
             var textnode = document.createTextNode("Congrats, you're correct!");

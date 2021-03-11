@@ -1,0 +1,27 @@
+.button {
+    background-color: rgb(0, 0, 107);
+    border-radius: 12px;
+    box-shadow: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Garamond;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    position: static;
+    margin-left: 2%;
+  }
+
+  body{
+    text-align: center;
+    background-color: rgb(153, 204, 204);
+    font-size: 25px;
+    font-family: Garamond;
+    font-weight: bold;
+  }
+
+  input{
+    font-size: 20px;
+    font-family: Garamond;
+  }

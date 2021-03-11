@@ -353,3 +353,7 @@ var randomItem = fortunes[Math.floor(Math.random()*fortunes.length)];
 //return randomItem;
 alert(randomItem);
 }
+
+function facts(){
+    var myWindow = window.open("facts.html", "_blank");
+}

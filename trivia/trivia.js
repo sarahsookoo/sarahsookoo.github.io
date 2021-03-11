@@ -7,17 +7,19 @@ var answers = ["11", "2007", "HyperText Transfer Protocol", "8", "365", "A pride
 
 var num = Math.floor(Math.random()*questions.length);
 
-function trivia(){
-    var myWindow = window.open("trivia.html", "_blank");
+function trivia(){ //opens trivia.html when button is pressed
+    var myWindow = window.open("trivia/trivia.html", "_blank");
 }
 
-function problems(){
+function problems(){ //gives the user a random question
 var randomQues = questions[num];
 //document.writeln(randomQues);
 document.getElementById("question").innerHTML = randomQues;
 }
 
-function checkAns(){
+//var correct = false;
+
+function checkAns(){ //checks the users answer to the random question
     var input = document.getElementsByName("ans")[0].value;
     if (input == answers[num]){
         document.getElementById("ans").innerHTML = "Congrats, you're correct";
@@ -29,7 +31,7 @@ function checkAns(){
     }
 }
 
-function validateForm() {
+function validateForm() { //checks the name that the user gives
     var x = document.getElementsByName("firstname")[0].value;
     if (x == "") {
       alert("Name must be filled out");
@@ -41,21 +43,21 @@ function validateForm() {
     }
   }
 
-  function unHide(){
+  function unHide(){ //changes the start button to visible
     var z = document.getElementsByClassName("show")[0];
     if(z.style.visibility = "hidden"){
         z.style.visibility = "visible";
     }
 }
 
-function unHide2(){
+function unHide2(){ //changes the question, input box and submit button to visible
     var z = document.getElementsByClassName("show2")[0];
     if(z.style.visibility = "hidden"){
         z.style.visibility = "visible";
     }
 }
 
-function unHide3(){
+function unHide3(){ //changes feedback, answer, and next question to visible
     var z = document.getElementsByClassName("show3")[0];
     if(z.style.visibility = "hidden"){
         z.style.visibility = "visible";
@@ -103,11 +105,23 @@ function replace(){
 
     var button = document.createElement("button"); //new button
     button.innerHTML = "Submit";
-    // button.addEventListener ("click", function() {
-    //     alert("did something");
-    //   });
-    // button.addEventListener ("click", checkAns());
-    button.addEventListener ("click", checkAns ); //checkans2 should check answer, create an unhide to add to the end
+    button.addEventListener ("click", function(){
+        if (i.value == answers[0]){
+            //document.getElementById('show2').innerHTML= "this is index 0" ;
+            var node = document.createElement("ul");
+            var textnode = document.createTextNode("Congrats, you're correct!");
+            node.appendChild(textnode);
+            document.getElementById("show2").appendChild(node);
+            }
+        else{
+            //document.getElementById('show2').innerHTML= "this is not index 0" ;
+            var node = document.createElement("ul");
+            var textnode = document.createTextNode("Wrong Answer, the correct answer is ");
+            node.appendChild(textnode);
+            document.getElementById("show2").appendChild(node);
+        }
+    }
+      );
     document.getElementById('show2').appendChild(button);
 }
 

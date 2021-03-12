@@ -1,5 +1,3 @@
-//<link href="trivia.css" rel="stylesheet"></link>
-
 var questions = [" How many soccer players should each team have on the field at the start of each match?",
 "What year was the very first model of the iPhone released?",
 "What does HTTP stand for?", "How many legs does a spider have?", "How many days are in a year?",
@@ -23,17 +21,17 @@ document.getElementById("question").innerHTML = randomQues;
 }
 
 function checkAns(){ //checks the users answer to the random question
+    var x = document.getElementsByName("firstname")[0].value;
     var input = document.getElementsByName("ans")[0].value;
     if (input == ""){
         alert("Answer must be filled out");
-        //return false;
     }
     else if (input.toLowerCase() == answers[num]){
-        document.getElementById("ans").innerHTML = "Congrats, you're correct";
+        document.getElementById("ans").innerHTML = "Congrats " + x + ", you're correct";
         unHide3();
     }
     else {
-        document.getElementById("ans").innerHTML = "Wrong Answer, the correct answer is " + answers[num];
+        document.getElementById("ans").innerHTML = "Wrong answer " + x + ", the correct answer is " + answers[num];
         unHide3();
     }
 }
@@ -42,7 +40,6 @@ function validateForm() { //checks the name that the user gives
     var x = document.getElementsByName("firstname")[0].value;
     if (x == "") {
       alert("Name must be filled out");
-      //return false;
     }
     else{
         //document.writeln("Hello " + x)
@@ -78,6 +75,7 @@ function unHide3(){ //changes feedback, answer, and next question to visible
 }
 
 function replace(){
+    var user = document.getElementsByName("firstname")[0].value;
     document.getElementById('show2').innerHTML = '';
 
     var newQues = document.createElement('p'); //new question
@@ -91,6 +89,7 @@ function replace(){
     document.getElementById('show2').appendChild(i);
 
     var button = document.createElement("button"); //new button
+    //button.setAttribute("name", "submit");
     button.innerHTML = "Submit";
     button.className = "button"; 
     button.addEventListener ("click", function(){
@@ -100,16 +99,20 @@ function replace(){
         else if (i.value.toLowerCase() == answers[ind]){
             //document.getElementById('show2').innerHTML= "this is index 0" ;
             var node = document.createElement("ul");
-            var textnode = document.createTextNode("Congrats, you're correct!");
+            var textnode = document.createTextNode("Congrats " + user + ", you're correct!");
             node.appendChild(textnode);
             document.getElementById("show2").appendChild(node);
+            document.getElementById("show2").removeChild(button);
+            //document.getElementById("show2").removeEventListener("click");
             }
         else{
             //document.getElementById('show2').innerHTML= "this is not index 0" ;
             var node = document.createElement("ul");
-            var textnode = document.createTextNode("Wrong Answer, the correct answer is " + answers[ind]);
+            var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind]);
             node.appendChild(textnode);
             document.getElementById("show2").appendChild(node);
+            document.getElementById("show2").removeChild(button);
+            //document.getElementById("show2").removeEventListener("click");
         }
     }
     );

@@ -18,7 +18,7 @@ var answers = ["11", "2007", "hyperText Transfer Protocol", "8", "365", "A Pride
 
 var num = Math.floor(Math.random()*questions.length);
 
-//var num2 = 0;
+var score = 0;
 
 function trivia(){ //opens trivia.html when button is pressed
     var myWindow = window.open("trivia/trivia.html", "_blank");
@@ -38,12 +38,15 @@ function checkAns(){ //checks the users answer to the random question
     }
     else if (input.toLowerCase() == answers[num].toLowerCase()){
         document.getElementById("ans").innerHTML = "Congrats " + x + ", you're correct!";
+        score++;
+        document.getElementById("score").innerHTML = "Score = " + score;
         //document.getElementsById("score").innerHTML = num2 + 1;
         unHide3();
         //unhideScore();
     }
     else {
         document.getElementById("ans").innerHTML = "Wrong answer " + x + ", the correct answer is " + answers[num];
+        document.getElementById("score").innerHTML = "Score = " + score;
         //document.getElementsById("score").innerHTML = num2 - 1;
         unHide3();
         //unhideScore();
@@ -58,7 +61,8 @@ function validateForm() { //checks the name that the user gives
     else{
         //document.writeln("Hello " + x)
         document.getElementById("demo").innerHTML = "Hello " + x + "!";
-        unHide()
+        
+        unHide();
     }
   }
 
@@ -121,9 +125,12 @@ function replace(){
         }
         else if (i.value.toLowerCase() == answers[ind].toLowerCase()){
             //document.getElementById('show2').innerHTML= "this is index 0" ;
+            score++;
             var node = document.createElement("ul");
-            var textnode = document.createTextNode("Congrats " + user + ", you're correct!");
+            // var node2 = document.createElement("ul");
+            var textnode = document.createTextNode("Congrats " + user + ", you're correct! Score = " + score);
             node.appendChild(textnode);
+            // node2.appendChild(score);
             document.getElementById("show2").appendChild(node);
             document.getElementById("show2").removeChild(button);
             //document.getElementById("show2").removeEventListener("click");
@@ -131,8 +138,10 @@ function replace(){
         else{
             //document.getElementById('show2').innerHTML= "this is not index 0" ;
             var node = document.createElement("ul");
-            var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind]);
+            // var node2 = document.createElement("ul");
+            var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind] + " Score = " + score);
             node.appendChild(textnode);
+            // node2.appendChild(score);
             document.getElementById("show2").appendChild(node);
             document.getElementById("show2").removeChild(button);
             //document.getElementById("show2").removeEventListener("click");

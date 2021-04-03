@@ -19,6 +19,8 @@ var answers = ["11", "2007", "hyperText Transfer Protocol", "8", "365", "A Pride
 var num = Math.floor(Math.random()*questions.length);
 
 var score = 0;
+var quesNum = 0;
+document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
 
 function trivia(){ //opens trivia.html when button is pressed
     var myWindow = window.open("trivia/trivia.html", "_blank");
@@ -36,18 +38,20 @@ function checkAns(){ //checks the users answer to the random question
     if (input == ""){
         alert("Answer must be filled out");
     }
-    else if (input.toLowerCase() == answers[num].toLowerCase()){
+    else if (input.toLowerCase() == answers[num].toLowerCase() || input.toLowerCase() == answers[num].toLowerCase() + " " ){
+        hideSub(); 
+        quesNum++;
         document.getElementById("ans").innerHTML = "Congrats " + x + ", you're correct!";
         score++;
-        document.getElementById("score").innerHTML = "Score = " + score;
-        //document.getElementsById("score").innerHTML = num2 + 1;
+        document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
         unHide3();
         //unhideScore();
     }
     else {
+        hideSub(); 
+        quesNum++;
         document.getElementById("ans").innerHTML = "Wrong answer " + x + ", the correct answer is " + answers[num];
-        document.getElementById("score").innerHTML = "Score = " + score;
-        //document.getElementsById("score").innerHTML = num2 - 1;
+        document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
         unHide3();
         //unhideScore();
     }
@@ -76,6 +80,10 @@ function validateForm() { //checks the name that the user gives
 function hide(){
     var z = document.getElementsByClassName("show")[0];
     z.innerHTML = '';
+}
+
+function hideSub() {
+    document.getElementById("hide").style.visibility = "hidden";
 }
 
 function unHide2(){ //changes the question, input box and submit button to visible
@@ -123,12 +131,14 @@ function replace(){
         if (i.value == ""){
             alert("Answer must be filled out");
         }
-        else if (i.value.toLowerCase() == answers[ind].toLowerCase()){
-            //document.getElementById('show2').innerHTML= "this is index 0" ;
+        else if (i.value.toLowerCase() == answers[ind].toLowerCase() || i.value.toLowerCase() == answers[ind].toLowerCase() + " "){
             score++;
+            quesNum++;
+            document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
             var node = document.createElement("ul");
             // var node2 = document.createElement("ul");
-            var textnode = document.createTextNode("Congrats " + user + ", you're correct! Score = " + score);
+            // var textnode = document.createTextNode("Congrats " + user + ", you're correct! Score = " + score);
+            var textnode = document.createTextNode("Congrats " + user + ", you're correct!");
             node.appendChild(textnode);
             // node2.appendChild(score);
             document.getElementById("show2").appendChild(node);
@@ -136,10 +146,11 @@ function replace(){
             //document.getElementById("show2").removeEventListener("click");
             }
         else{
-            //document.getElementById('show2').innerHTML= "this is not index 0" ;
+            quesNum++;
+            document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
             var node = document.createElement("ul");
             // var node2 = document.createElement("ul");
-            var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind] + " Score = " + score);
+            var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind]);
             node.appendChild(textnode);
             // node2.appendChild(score);
             document.getElementById("show2").appendChild(node);

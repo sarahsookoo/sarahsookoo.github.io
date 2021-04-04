@@ -357,3 +357,7 @@ alert(randomItem);
 function facts(){
     var myWindow = window.open("facts.html", "_blank");
 }
+
+function art(){
+    var myWindow = window.open("art/art.html", "_blank");
+}

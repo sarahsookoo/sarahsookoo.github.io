@@ -6,7 +6,10 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(rgb(241, 241, 114), rgb(240, 178, 62), rgb(231, 43, 43), rgb(248, 46, 214), rgb(112, 1, 112));
+    /* background: linear-gradient(rgb(241, 241, 114), rgb(240, 178, 62), rgb(231, 43, 43), rgb(250, 78, 221), rgb(100, 1, 100)); */
+    /* background: radial-gradient(rgb(241, 241, 114), rgb(240, 178, 62), rgb(231, 43, 43), rgb(250, 78, 221), rgb(100, 1, 100)); */
+    background: radial-gradient(circle at top,rgb(100, 1, 100), transparent),
+            radial-gradient(circle at bottom,rgb(241, 241, 114), rgb(240, 178, 62),rgb(231, 43, 43), rgb(250, 78, 221), transparent);
   }
 
 #night {
@@ -17,7 +20,7 @@
     left: 50.25%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    background: linear-gradient(black, #000099, #4da8e4, #f8bdbd, #ffeee6);
   }
 
 #star1{
@@ -58,7 +61,8 @@
     border-radius: 50%;
     position: fixed;
     top: 30px;
-    right: 552px;
+    /* right: 552px; */
+    left: 52%;
     height: 100px;
     width: 100px;
 }
@@ -69,7 +73,8 @@
     border-radius: 50%;
     position: fixed;
     top: 30px;
-    right: 571px;
+    /* right: 571px; */
+    left: 51%;
     height: 100px;
     width: 100px;
 }
@@ -155,4 +160,91 @@ p{
     100%{
         left: 80%;
     }
+}
+
+#sun{
+    background: yellow;
+    box-shadow: orange 4px 6px;  
+    border-radius: 50%;
+    position: fixed;
+    top: 30px;
+    left: 2%;
+    height: 100px;
+    width: 100px;
+}
+
+#cloud{
+    background: white; 
+    box-shadow: black 4px 5px;
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    animation-name: cloud;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#cloud2{
+    background: white; 
+    box-shadow: black 4px 5px;
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    animation-name: cloud2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#cloud3{
+    background: white; 
+    box-shadow: black 4px 5px;
+    border-radius: 50%;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    animation-name: cloud3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud{
+    50%{
+        box-shadow: transparent 4px 5px;
+    }
+    100%{
+        /* right: 0%; */
+        box-shadow: transparent 2px 3px;
+        background: transparent;
+        left: 22%;
+    }
+
+}
+
+@keyframes cloud2{
+    50%{
+        box-shadow: transparent 4px 5px;
+    }
+    100%{
+        /* right: 0%; */
+        box-shadow: transparent 2px 3px;
+        background: transparent;
+        left: 34%;
+    }
+
+}
+
+@keyframes cloud3{
+    50%{
+        box-shadow: transparent 4px 5px;
+    }
+    100%{
+        /* right: 0%; */
+        box-shadow: transparent 2px 3px;
+        background: transparent;
+        left: 45%;
+        
+    }
+
 }

@@ -66,6 +66,10 @@
         margin-right: 2%;
       }
 
+      .button:hover{
+        background: rgb(252, 156, 172);
+    }
+
       table {
         border: 1px, solid black;
         border-collapse: collapse;

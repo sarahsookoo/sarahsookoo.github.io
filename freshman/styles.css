@@ -71,9 +71,9 @@
         margin-right: 2%;
       }
 
-      /* #button:hover{
-        color: teal;
-      } */
+      .button:hover{
+        background: rgb(252, 156, 172);
+    }
 
       table {
         border: 1px, solid black;

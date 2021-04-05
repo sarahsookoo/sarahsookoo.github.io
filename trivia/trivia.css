@@ -13,6 +13,10 @@
     margin-left: 2%;
   }
 
+  .button:hover{
+    background: rgb(252, 156, 172);
+}
+
   body{
     text-align: center;
     background-color: rgb(153, 204, 204);

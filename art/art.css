@@ -1,15 +1,26 @@
-#screen {
+#day {
     position: fixed;
     padding: 0;
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgb(241, 241, 114), rgb(240, 178, 62), rgb(231, 43, 43), rgb(248, 46, 214), rgb(112, 1, 112));
+  }
+
+#night {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 50.25%;
+    width: 50%;
     height: 100%;
     background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
   }
 
-  #star1{
+#star1{
       position: fixed;
       top: 40px;
       left: 20px;
@@ -17,7 +28,7 @@
       height: 5px;
       background: white;
       border-radius: 50%;
-      animation-name: star1;
+      animation-name: star;
       animation-duration: 1s;
       animation-iteration-count: infinite;
   }
@@ -30,19 +41,13 @@
     height: 5px;
     background: white;
     border-radius: 50%;
-    animation-name: star2;
+    animation-name: star;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53)
 }
 
-@keyframes star1 {
-    50%{
-        background: transparent;
-    }
-}
-
-@keyframes star2 {
+@keyframes star {
     50%{
         background: transparent;
     }
@@ -53,7 +58,7 @@
     border-radius: 50%;
     position: fixed;
     top: 30px;
-    left: 35px;
+    right: 552px;
     height: 100px;
     width: 100px;
 }
@@ -64,25 +69,31 @@
     border-radius: 50%;
     position: fixed;
     top: 30px;
-    left: 20px;
+    right: 571px;
     height: 100px;
     width: 100px;
 }
 
 #name{
-    background: yellow;
+    background: #ffeee6;
     position: fixed;
     top: 160px;
+    /* right: 475px; */
     left: 20px;
     height: 5%;
 }
 
 #button{
-    background: yellow;
+    background: #ffeee6;
     position: fixed;
     top: 160px;
+    /* right: 410px; */
     left: 200px;
     height: 6%;
+}
+
+#button:hover{
+    background: chartreuse;
 }
 
 #hello{
@@ -108,7 +119,7 @@
 
 @keyframes hello{
     100%{
-        left: 100%;
+        left: 23%;
     }
 }
 
@@ -116,4 +127,32 @@ p{
     font-size: 50px;
     font-family: 'Courier New', monospace;
     font-weight: bold;
+    /* text-align: center; */
+}
+
+#hello2{
+    position: fixed;
+    top:220px;
+    left: 51%;
+    visibility: hidden;
+    animation-name: hello2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+#demo2{
+    position: fixed;
+    top:280px;
+    left:51%;
+    animation-name: hello2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes hello2{
+    100%{
+        left: 80%;
+    }
 }

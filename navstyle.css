@@ -114,3 +114,7 @@ ul li ul{
     position: static;
     margin-left: 2%;
   }
+
+  .button:hover{
+    background: rgb(252, 156, 172);
+}

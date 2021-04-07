@@ -26,7 +26,6 @@
 #star1{
       position: fixed;
       top: 40px;
-      left: 20px;
       width: 5px;
       height: 5px;
       background: white;
@@ -39,7 +38,6 @@
   #star2{
     position: fixed;
     top: 80px;
-    left: 60px;
     width: 5px;
     height: 5px;
     background: white;
@@ -248,3 +246,7 @@ p{
     }
 
 }
+
+/* img{
+    position: fixed;
+} */

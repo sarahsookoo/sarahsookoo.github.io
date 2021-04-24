@@ -113,5 +113,11 @@
       margin-left: .5%;
       margin-right: .5%;
     }
+
+    #navlinks{
+      padding-right: 3%; 
+      color: black; 
+      text-decoration: none;
+    }
     
    

@@ -20,7 +20,7 @@
         text-align: center;
         margin-top: 0%;
         margin-bottom: 0%;
-        padding-bottom: 1.5%;
+        /* padding-bottom: 1.5%; */
     }
 
 
@@ -66,18 +66,15 @@
         margin-right: 2%;
       }
 
-      table {
-        border: 1px, solid black;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      th, td {
-        padding: 5px;
-        text-align: center;
-        font-size: 18px;
+      #links1{
+        background-image: linear-gradient(to bottom right, rgb(247, 52, 52), pink);
+        margin-top: 1%;
+        padding-top: .5%;
+        padding-bottom: .5%;
+        font-size: 20px;
         font-family: Garamond;
-        border-bottom: 1px solid #ddd;
+        text-align: center;
+        font-weight: bold;
       }
       
      

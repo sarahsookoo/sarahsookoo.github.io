@@ -9,3 +9,7 @@ function winter1(){
  function freshman2(){
     var myWindow = window.open("freshman2.html", target="_self");
  }
+
+ function home(){
+   var myWindow = window.open("https://sarahsookoo.github.io./", target="_self");
+}

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title> Trivia </title>
-  <link rel="shortcut icon" type="image/jpg" href="photos/LOGO.jpg"/>
+  <link rel="shortcut icon" type="image/jpg" href="photos/LOGO.jpg" />
 
 </head>
 
@@ -15,47 +15,47 @@
 
 <body>
 
-  <div style= 
-  "background-color: bisque;
+  <div style="background-color: bisque;
   width: 100%;
   text-align: center;
   border: 1px  black;
-  box-shadow: 2px 3px ;"> 
-    <p id = "scoreDis"></p>
+  box-shadow: 2px 3px ;">
+    <p id="scoreDis"></p>
   </div>
 
   <img class="goodjob" height="100" width="100" src="photos/goodjob.jpg" style="visibility: hidden; ">
   <img class="nextTime" height="100" width="100" src="photos/nextTime.jpg" style="visibility: hidden; ">
 
-    <p> Hi, welcome to a trivia game! Please enter your name:</p>
+  <p> Hi, welcome to a trivia game! Please enter your name:</p>
 
   <script src="trivia.js" type="text/javascript"> </script>
 
-    Name: <input type="text" id= "name" name="firstname">
-    <input type="button" class = "button" value="Submit" onclick="validateForm();">
-    <!-- <input type="button"  value="Submit" onclick="validateForm()"> -->
-    
-    <p style="line-height: 1%;" id="demo"></p>
-    <img id="goodLuck" height="100" width="100" src= "photos/goodluck.jpg" style="visibility: hidden;">
+  Name: <input type="text" id="name" name="firstname">
+  <input type="button" class="button" value="Submit" onclick="validateForm();">
+  <!-- <input type="button"  value="Submit" onclick="validateForm()"> -->
 
-    <div class = "show" style="visibility: hidden">
-        <p> Press the button to get started!</p>
-        <input type="button" class="button" onclick="problems(); unHide2(); hide();" value="Start!"> 
+  <p style="line-height: 1%;" id="demo"></p>
+  <img id="goodLuck" height="100" width="100" src="photos/goodluck.jpg" style="visibility: hidden;">
 
-    </div>
+  <div class="show" style="visibility: hidden">
+    <p> Press the button to get started!</p>
+    <input type="button" class="button" onclick="problems(); unHide2(); hide();" value="Start!">
 
-    <div class = "show2" id = "show2" style="visibility: hidden;">
-        <p style="line-height: 1%" id="question"></p>  
-        Answer: <input type="text" id= "answer" name="ans">
-        <input id = "hide" type="button" class= "button" value="Submit" onclick="checkAns();">
-        <p id="ans"></p> 
-    </div>
+  </div>
 
-    <div class = "show3" style="visibility: hidden;">
-      <input style= "margin-top: 1%" type="button"class = "button" onclick=" hideGoodJob(); hideNextTime(); replace();" value="Next Question"> 
-    </div>
+  <div class="show2" id="show2" style="visibility: hidden;">
+    <p style="line-height: 1%" id="question"></p>
+    Answer: <input type="text" id="answer" name="ans">
+    <input id="hide" type="button" class="button" value="Submit" onclick="checkAns();">
+    <p id="ans"></p>
+  </div>
 
-    
+  <div class="show3" style="visibility: hidden;">
+    <input style="margin-top: 1%" type="button" class="button" onclick=" hideGoodJob(); hideNextTime(); replace();"
+      value="Next Question">
+  </div>
 
-    
+
+
+
 </body>

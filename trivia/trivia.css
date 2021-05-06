@@ -29,3 +29,42 @@
     font-size: 20px;
     font-family: Garamond;
   }
+
+  .goodjob, .nextTime{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    animation-name: photos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes photos{
+      50%{
+       top: 50%;
+       left: 50%;
+       margin-top: -50px;
+       margin-left: -100px;
+       width: 200px;
+       height: 200px;
+      }
+      100%{
+        top: 100%;
+        left: 100%;
+      }
+  }
+
+  #goodLuck{
+    /* margin-top: 1%;
+    margin-bottom: 1%; */
+    animation-name: goodLuck;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes goodLuck{
+    50%{
+      border-radius: 50%;
+    }
+  }
+  

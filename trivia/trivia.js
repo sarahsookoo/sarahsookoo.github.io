@@ -9,12 +9,12 @@ var questions = [" How many soccer players should each team have on the field at
  "Which country produces the most coffee in the world?", "What is the common name for dried plums?", "Which two countries share the longest international border?",
 "What is the smallest country in the world?", "Which mammal has no vocal cords?", "The Statue of Liberty was given to the US by which country?",
 "Which chess piece can only move diagonally?", "Which country was the Caesar salad invented in?", "What is the most common letter in the English alphabet?",
- "What animal is constitutionally protected in Florida?", "What is a community of ants called?"];
+ "What animal is constitutionally protected in Florida?", "What is a community of ants called?", "What geometric shape is generally used for stop signs?", "How many languages are written from right to left?", "Which animal can be seen on the Porsche logo?", "What is the name of the largest ocean on earth?", "What is the rarest M&M color?", "Which is the only edible food that never goes bad?", "Which country invented ice cream?", "Which country won the first-ever soccer World Cup in 1930?", "Who was the first president of the United States?"];
 
 var answers = ["11", "2007", "hyperText Transfer Protocol", "8", "365", "A Pride","Hedwig", "Mercury", "white", "english",
 "Greenland", "3", "Jupiter", "skin", "Pandora", "Switzerland", "Arizona and Hawaii", "The sperm whale", "An aglet", "Hamlet",
 "Talc", "24", "Thailand", "Venus", "Brazil", "Prunes", "Canada and the USA", "Vatican City", "Giraffe", "France", "Bishop",
- "Mexico", "E", "Pigs", "A colony"];
+ "Mexico", "E", "Pigs", "A colony", "Octagon", "12", "Horse", "Pacific Ocean", "Brown", "Honey", "China", "Uruguay", "George Washington"];
 
 var num = Math.floor(Math.random()*questions.length);
 
@@ -45,7 +45,7 @@ function checkAns(){ //checks the users answer to the random question
         score++;
         document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
         unHide3();
-        //unhideScore();
+        unHideGoodJob();
     }
     else {
         hideSub(); 
@@ -53,7 +53,7 @@ function checkAns(){ //checks the users answer to the random question
         document.getElementById("ans").innerHTML = "Wrong answer " + x + ", the correct answer is " + answers[num];
         document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
         unHide3();
-        //unhideScore();
+        unHideNextTime();
     }
 }
 
@@ -65,8 +65,8 @@ function validateForm() { //checks the name that the user gives
     else{
         //document.writeln("Hello " + x)
         document.getElementById("demo").innerHTML = "Hello " + x + "!";
-        
         unHide();
+        unHideGoodLuck();
     }
   }
 
@@ -100,13 +100,40 @@ function unHide3(){ //changes feedback, answer, and next question to visible
     }
 }
 
-// function unhideScore(){ //changes feedback, answer, and next question to visible
-//     var z = document.getElementsByClassName("score")[0];
-//     //var num2 = 0;
-//     if(z.style.visibility = "hidden"){
-//         z.style.visibility = "visible";
-//     }
-// }
+function unHideGoodJob(){
+    var z = document.getElementsByClassName("goodjob")[0];
+    if(z.style.visibility = "hidden"){
+        z.style.visibility = "visible";
+    }
+}
+
+function unHideNextTime(){
+    var z = document.getElementsByClassName("nextTime")[0];
+    if(z.style.visibility = "hidden"){
+        z.style.visibility = "visible";
+    }
+}
+
+function unHideGoodLuck(){
+    var z = document.getElementById("goodLuck");
+    if(z.style.visibility = "hidden"){
+        z.style.visibility = "visible";
+    }
+}
+
+function hideGoodJob(){
+    var z = document.getElementsByClassName("goodjob")[0];
+    if(z.style.visibility = "visible"){
+        z.style.visibility = "hidden";
+    }
+}
+
+function hideNextTime(){
+    var z = document.getElementsByClassName("nextTime")[0];
+    if(z.style.visibility = "visible"){
+        z.style.visibility = "hidden";
+    }
+}
 
 function replace(){
     var user = document.getElementsByName("firstname")[0].value;
@@ -136,26 +163,21 @@ function replace(){
             quesNum++;
             document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
             var node = document.createElement("ul");
-            // var node2 = document.createElement("ul");
-            // var textnode = document.createTextNode("Congrats " + user + ", you're correct! Score = " + score);
             var textnode = document.createTextNode("Congrats " + user + ", you're correct!");
             node.appendChild(textnode);
-            // node2.appendChild(score);
+            unHideGoodJob();
             document.getElementById("show2").appendChild(node);
             document.getElementById("show2").removeChild(button);
-            //document.getElementById("show2").removeEventListener("click");
             }
         else{
             quesNum++;
             document.getElementById("scoreDis").innerHTML = "Questions Answered: " + quesNum + " | Score: " + score;
             var node = document.createElement("ul");
-            // var node2 = document.createElement("ul");
             var textnode = document.createTextNode("Wrong answer " + user + ", the correct answer is " + answers[ind]);
             node.appendChild(textnode);
-            // node2.appendChild(score);
+            unHideNextTime();
             document.getElementById("show2").appendChild(node);
             document.getElementById("show2").removeChild(button);
-            //document.getElementById("show2").removeEventListener("click");
         }
     }
     );

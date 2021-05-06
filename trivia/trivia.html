@@ -24,6 +24,9 @@
     <p id = "scoreDis"></p>
   </div>
 
+  <img class="goodjob" height="100" width="100" src="photos/goodjob.jpg" style="visibility: hidden; ">
+  <img class="nextTime" height="100" width="100" src="photos/nextTime.jpg" style="visibility: hidden; ">
+
     <p> Hi, welcome to a trivia game! Please enter your name:</p>
 
   <script src="trivia.js" type="text/javascript"> </script>
@@ -32,7 +35,8 @@
     <input type="button" class = "button" value="Submit" onclick="validateForm();">
     <!-- <input type="button"  value="Submit" onclick="validateForm()"> -->
     
-    <p id="demo"></p>
+    <p style="line-height: 1%;" id="demo"></p>
+    <img id="goodLuck" height="100" width="100" src= "photos/goodluck.jpg" style="visibility: hidden;">
 
     <div class = "show" style="visibility: hidden">
         <p> Press the button to get started!</p>
@@ -41,16 +45,14 @@
     </div>
 
     <div class = "show2" id = "show2" style="visibility: hidden;">
-        <p id="question"></p>  
+        <p style="line-height: 1%" id="question"></p>  
         Answer: <input type="text" id= "answer" name="ans">
         <input id = "hide" type="button" class= "button" value="Submit" onclick="checkAns();">
         <p id="ans"></p> 
     </div>
 
-    
-
     <div class = "show3" style="visibility: hidden;">
-      <input style= "margin-top: 1%" type="button"class = "button" onclick=" replace();" value="Next Question"> 
+      <input style= "margin-top: 1%" type="button"class = "button" onclick=" hideGoodJob(); hideNextTime(); replace();" value="Next Question"> 
     </div>
 
     

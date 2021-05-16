@@ -30,13 +30,26 @@
         position: static;
         font-family: Garamond;
         font-size: 270%;
+        color: rgb(216, 45, 45);
         text-align: left;
         margin-top: 0%;
         margin-bottom: 0%;
         padding-top: 3%;
     }
 
-
+    h4 {
+        /* color: darkviolet; */
+        position: static;
+        font-family: Garamond;
+        font-size: 190%;
+        color: rgb(148, 94, 24);
+        /* color: rgb(201, 0, 201); */
+        text-align: left;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: .5%;
+        padding-left: 2%;
+    }
 
     p{
            font-size: 20px;
@@ -67,6 +80,7 @@
       }
 
       #links1{
+        /* position: sticky; */
         background-image: linear-gradient(to bottom right, rgb(247, 52, 52), pink);
         margin-top: 1%;
         padding-top: .5%;
@@ -75,6 +89,12 @@
         font-family: Garamond;
         text-align: center;
         font-weight: bold;
+      }
+
+      #navlinks{
+        padding-right: 3%; 
+        color: black; 
+        text-decoration: none;
       }
       
      

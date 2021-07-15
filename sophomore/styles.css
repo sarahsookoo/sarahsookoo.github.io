@@ -33,7 +33,25 @@
       text-align: left;
       margin-top: 0%;
       margin-bottom: 0%;
-      padding-top: 3%;
+      padding-top: 1%;
+      padding-left: 1%;
+      text-align: center;
+  }
+
+  #divleft{
+    margin-top: 1.5%; 
+    width: 49%; 
+    border-style: double; 
+    border-color: black; 
+    float: left;
+  }
+
+  #divright{
+    margin-top: 1.5%; 
+    width: 49%; 
+    border-style: double; 
+    border-color: black; 
+    float: right;
   }
 
   #second{
@@ -55,7 +73,8 @@
          font-family: Garamond;
          margin-top: 0%; 
          margin-bottom: 1%;
-         /* padding-top: 3%; */
+         padding-left: 1%;
+         padding-right: 1%;
   }
 
   img{
@@ -140,8 +159,9 @@
       width: 10%;
       background-color: rgb(194, 208, 226);
       position: absolute;
-      height: 100%;
-      overflow: auto;
+      height: auto;
+      /* height: 100%; change to auto to fit amount of text */
+      overflow: auto; /*change to scroll for scroll bar (learn how to remove right/left scroll)*/
     }
     
     li a { /*text*/

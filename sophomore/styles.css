@@ -114,10 +114,52 @@
       margin-right: .5%;
     }
 
-    #navlinks{
+    /* #navlinks{
       padding-right: 3%; 
       color: black; 
       text-decoration: none;
+    } */
+
+    /* #links1{
+      position: sticky;
+      width: 10%;
+      background-image: linear-gradient(to bottom right, darkviolet, plum);
+      margin-top: 2%;
+      padding-top: .5%;
+      padding-bottom: .5%;
+      font-size: 20px;
+      font-family: Garamond;
+      text-align: center;
+      font-weight: bold;
+    } */
+
+    ul { /*actual nav bar*/
+      list-style-type: none;
+      margin-top: 1%;
+      padding: 0;
+      width: 10%;
+      background-color: rgb(194, 208, 226);
+      position: absolute;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    li a { /*text*/
+      display: block;
+      color: #000;
+      padding-top: 13%;
+      padding-bottom: 13%;
+      font-size: 20px;
+      /* line-height: 30%; */
+      font-family: Garamond;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) { /*hover over text*/
+      background-color: darkviolet;
+      color: white;
     }
     
    

@@ -11,6 +11,8 @@
 </head>
 
 <link href="styles.css" rel="stylesheet">
+<script src="link.js" type="text/javascript"> </script>
+
 
 <body>
     <h1 style="background-image: linear-gradient(to bottom right, rgb(247, 52, 52), pink);"> Summer 2021</h1>
@@ -19,14 +21,22 @@
 </time> - <time datetime="2021-08-24">August 24<sup>th</sup>, 2021</h2></time>
 
 <div id="links1">
-    <a id= "navlinks" href="#may25-30" onclick="linkAnimate()">May 25 - May 30</a>
-    <a id= "navlinks" href="#june7" onclick="linkAnimate()">June 7</a>
-    <a id= "navlinks" href="#june9" onclick="linkAnimate()">June 9</a>
-    <a id= "navlinks" href="#june16" onclick="linkAnimate()">June 16</a>
-    <a id= "navlinks" href="#june23" onclick="linkAnimate()">June 23</a>
-    <a id= "navlinks" href="#july16" onclick="linkAnimate()">July 16</a>
-    <a id= "navlinks" href="#july19" onclick="linkAnimate()">July 19</a>
+    <a id= "navlinks" href="#may25-30" onclick="return func();">May 25 - May 30</a>
+    <a id= "navlinks" href="#june7" onclick="return func();">June 7</a>
+    <a id= "navlinks" href="#june9" onclick="return func();">June 9</a>
+    <a id= "navlinks" href="#june16" onclick="return func();">June 16</a>
+    <a id= "navlinks" href="#june23" onclick="return func();">June 23</a>
+    <a id= "navlinks" href="#july16" onclick="return func();">July 16</a>
+    <a id= "navlinks" href="#july19" onclick="return func();">July 19</a>
 </div>
+
+<a href="https://tutorial.eyehunts.com//" onclick="return func();">Item</a>
+
+    <script type="text/javascript">
+        function func () {
+         alert("Hello")
+     }
+ </script>
 
 <article>
     <section id="may25-30">
@@ -286,6 +296,8 @@
             at around 9 so I showered and chilled for the rest of the day. It was a very long day but I had a lot of fun catching up with Defne.
         </p> 
     </section>
+
+    
 
 </article>
 

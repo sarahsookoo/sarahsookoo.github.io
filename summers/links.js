@@ -1,3 +1,4 @@
-function linkAnimate(){
-    
-}
+
+    //     function func () {
+    //      alert("Hello")
+    //  }

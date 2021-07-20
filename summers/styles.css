@@ -34,6 +34,10 @@
         text-align: left;
         margin-top: 1%;
         margin-bottom: .5%;
+        
+        animation-name: linkanimate;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
     }
 
     h4 {
@@ -93,8 +97,16 @@
         padding-right: 3%; 
         color: black; 
         text-decoration: none;
-      }
+    }
 
       #buttonHover:hover{
         background: rgb(247, 52, 52);
     }
+
+    @keyframes linkanimate {
+        50%{
+            visibility: hidden;
+        }
+    }
+        
+    

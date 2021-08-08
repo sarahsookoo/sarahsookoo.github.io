@@ -28,3 +28,11 @@ function func6(){
 function func7(){
     document.getElementById("seven").style.animation = "move 1s 1";
 }
+
+function func7(){
+    document.getElementById("eight").style.animation = "move 1s 1";
+}
+
+function func7(){
+    document.getElementById("nine").style.animation = "move 1s 1";
+}

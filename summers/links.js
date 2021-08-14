@@ -29,10 +29,18 @@ function func7(){
     document.getElementById("seven").style.animation = "move 1s 1";
 }
 
-function func7(){
+function func8(){
     document.getElementById("eight").style.animation = "move 1s 1";
 }
 
-function func7(){
+function func9(){
     document.getElementById("nine").style.animation = "move 1s 1";
+}
+
+function func10(){
+    document.getElementById("ten").style.animation = "move 1s 1";
+}
+
+function fun11(){
+    document.getElementById("eleven").style.animation = "move 1s 1";
 }

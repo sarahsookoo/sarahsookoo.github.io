@@ -44,3 +44,11 @@ function func10(){
 function fun11(){
     document.getElementById("eleven").style.animation = "move 1s 1";
 }
+
+function fun12(){
+    document.getElementById("twelve").style.animation = "move 1s 1";
+}
+
+function fun13(){
+    document.getElementById("thirteen").style.animation = "move 1s 1";
+}

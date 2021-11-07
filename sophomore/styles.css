@@ -102,6 +102,7 @@
       font-size: 30px;
       position: static;
       margin-right: 2%;
+      white-space: normal;
     }
 
     #buttonFirst:hover{
@@ -162,8 +163,7 @@
       background-color: rgb(194, 208, 226);
       position: absolute;
       height: auto;
-      /* height: 100%; change to auto to fit amount of text */
-      overflow: auto; /*change to scroll for scroll bar (learn how to remove right/left scroll)*/
+      /* overflow: auto; change to scroll for scroll bar (learn how to remove right/left scroll) */
     }
     
     li a { /*text*/

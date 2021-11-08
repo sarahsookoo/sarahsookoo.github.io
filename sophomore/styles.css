@@ -1,5 +1,4 @@
-
-    h1 {
+h1 {
       color: black;
       position: static;
       font-family: Garamond;
@@ -102,7 +101,7 @@
       font-size: 30px;
       position: static;
       margin-right: 2%;
-      width: auto;
+      width: 100%;
       white-space: normal;
     }
 
@@ -163,7 +162,7 @@
       width: 9%;
       background-color: rgb(194, 208, 226);
       position: absolute;
-      height: auto;
+      height: auto; /*adjust size of bar*/
       /* overflow: auto; change to scroll for scroll bar (learn how to remove right/left scroll) */
     }
     
@@ -191,6 +190,10 @@
       gap: 10px;
       grid-auto-rows: minmax(100px, auto);
       margin-left: 9%;
+    }
+
+    .wrapper > div{
+      border-style: double;
     }
     /* .one {
       grid-column: 1 / 2;
@@ -224,6 +227,17 @@
       grid-column: 2 / 3;
       grid-row: 5;
     }
+
+    /* .can1{
+      grid-template-columns: 1/4;
+
+    } */
+
+    /* @keyframes move {
+      50%{
+          font-size: 120%;
+      }
+  } */
     
     
    

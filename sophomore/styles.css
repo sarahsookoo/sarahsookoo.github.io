@@ -224,8 +224,35 @@ h1 {
       grid-row: 4;
     }
     .eight {
-      grid-column: 2 / 3;
+      grid-column: 2 / 4;
       grid-row: 5;
+    }
+
+    .nine{
+      grid-column: 2/4;
+      grid-row: 6;
+    }
+
+    .ten{
+      grid-column: 2/3;
+      grid-row: 7;
+    }
+
+    .eleven{
+      grid-column: 3/4;
+      grid-row: 7;
+    }
+    .twelve{
+      grid-column: 2/3;
+      grid-row: 8;
+    }
+    .thirteen{
+      grid-column: 3/4;
+      grid-row: 8;
+    }
+    .fourteen{
+      grid-column: 2/4;
+      grid-row: 9;
     }
 
     /* .can1{

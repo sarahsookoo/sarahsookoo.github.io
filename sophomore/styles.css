@@ -186,7 +186,7 @@ li a:hover:not(.active) { /*hover over text*/
 .wrapper {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  gap: 10px;
+  gap: 7px;
   grid-auto-rows: minmax(100px, auto);
   margin-left: 9%;
 }

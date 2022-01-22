@@ -1,0 +1,18 @@
+header, footer{
+    background-color: rgb(179, 245, 245);
+}
+
+form{
+    display: grid; 
+    grid-column: 1/2;
+    grid-row: 1;
+    /* border-style: double; */
+}
+
+
+  .answers {
+    display: grid; 
+    grid-column: 3/4;
+    grid-row: 1; /*start, span (length)*/
+    border-style: solid;
+  }

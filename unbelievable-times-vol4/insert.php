@@ -1,16 +1,6 @@
 <?php
 
-// servername => localhost
-// username => root
-// password => empty
-// database name => staff
-
-$host = "sql5.freesqldatabase.com";
-$dbUsername = "sql5467617";
-$dbPassword = "DYqsevJyBr";
-$dbName = "sql5467617";
-
-$conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbName);
+$conn = mysqli_connect('localhost', 'root', '', 'surveys');
 
 // Check connection
 if ($conn === false) {
@@ -18,27 +8,23 @@ if ($conn === false) {
         . mysqli_connect_error());
 }
 
-// Taking all 5 values from the form data(input)
+// Taking all 3 values from the form data(input)
 $name =  $_REQUEST['name'];
 $answer = $_REQUEST['question'];
 $comments =  $_REQUEST['comments'];
 
-
 // Performing insert query execution
-// here our table name is college
-$sql = "INSERT INTO survey_one  VALUES ('$name', 
+// here our table name is survey_one
+$sql = "INSERT INTO survey_one (Name, Answer, Comments)  VALUES ('$name', 
             '$answer','$comments')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "<h3>data stored in a database successfully."
-        . " Please browse your localhost php my admin"
-        . " to view the updated data</h3>";
+    echo "<h3>data stored in a database successfully.</h3>";
 
-    echo nl2br("\n$name\n $answer\n "
-        . "$comments");
+    echo nl2br("\n$name\n $answer\n$comments");
 } else {
-    echo "ERROR: Hush! Sorry $sql. "
-        . mysqli_error($conn);
+    echo "ERROR: Hush! Sorry $sql. ";
+    mysqli_error($conn);
 }
 
 // Close connection

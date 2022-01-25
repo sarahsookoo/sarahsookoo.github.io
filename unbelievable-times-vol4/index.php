@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <script src="surveyOne.js" type="text/javascript"> </script> -->
 <link rel="stylesheet" href="styles.css">
 <link rel="shortcut icon" type="image/jpg" href="LOGO.jpg" />
 
@@ -19,7 +18,6 @@
   </header>
 
   <form action="insert.php" method="POST">
-    <div class="formBox">
       <label for="name">Enter your name:</label>
       <input type="text" name="name" id="name" placeholder="Name" />
       <br> <br>
@@ -32,7 +30,6 @@
       <!-- <button id="btn">Submit</button> -->
       <input type="submit" value="Submit" id="submit" name="submit">
       <br> <br>
-    </div>
   </form>
 
 </body>

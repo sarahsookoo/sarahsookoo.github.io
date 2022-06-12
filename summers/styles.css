@@ -108,5 +108,34 @@
             font-size: 350%;
         }
     }
+
+    ul { /*actual nav bar*/
+        list-style-type: none;
+        /* margin-top: 1.5%; */
+        padding: 0;
+        width: 9%;
+        background-color: rgb(194, 208, 226);
+        position: absolute;
+        height: auto; /*adjust size of bar*/
+        /* overflow: auto; change to scroll for scroll bar (learn how to remove right/left scroll) */
+      }
+      
+      li a { /*text*/
+        display: block;
+        color: #000;
+        padding-top: 13%;
+        padding-bottom: 13%;
+        font-size: 20px;
+        /* line-height: 30%; */
+        font-family: Garamond;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) { /*hover over text*/
+        background: rgb(247, 52, 52);
+        color: white;
+      }
         
     

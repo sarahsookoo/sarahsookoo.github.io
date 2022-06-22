@@ -1,1 +1,1 @@
-To view work in progress, go to https://sarahsookoo.github.io./. Enjoy!
+To view work in progress, go to [sarahsookoo.github.io](https://sarahsookoo.github.io./). Enjoy!
